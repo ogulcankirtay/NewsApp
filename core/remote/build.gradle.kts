@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.serilazitation.kxSerialization)
 }
 
 android {
@@ -25,9 +26,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
+
 }
 
 dependencies {
@@ -37,4 +36,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Libraries ====================================================================================
+    implementation(libs.serialization.kxSerialization)
+    api(libs.network.ktorClient.core)
+    implementation(libs.network.ktorClient.okhttp)
 }
