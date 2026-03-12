@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.oglcnkrty.core.common"
+    namespace = "com.oglcnkrty.core.local"
     compileSdk {
         version = release(36)
     }
@@ -18,7 +18,6 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-
         }
     }
     compileOptions {

@@ -19,6 +19,15 @@ dependencyResolutionManagement {
     }
 }
 
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+
 rootProject.name = "NewsApp"
 include(":app")
 include(":core:common")
+include(":core:data")
+include(":core:domain")
+include(":core:remote")
+include(":core:local")
+include(":feature:auth")
+include(":feature:home")
+include(":feature:profile")

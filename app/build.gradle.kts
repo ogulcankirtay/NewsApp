@@ -38,10 +38,24 @@ android {
 }
 
 dependencies {
+    //Libraries ====================================================================================
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    // Core Modules ================================================================================
+    implementation(projects.core.data)
+    implementation(projects.core.common)
+    implementation(projects.core.domain)
+    implementation(projects.core.local)
+    implementation(projects.core.remote)
+
+    //Feature Modules ==============================================================================
+    implementation(projects.feature.auth)
+    implementation(projects.feature.home)
+    implementation(projects.feature.profile)
 }

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.oglcnkrty.core.common"
+    namespace = "com.oglcnkrty.feature.profile"
     compileSdk {
         version = release(36)
     }
@@ -31,10 +31,15 @@ android {
 }
 
 dependencies {
+    //Libraries ====================================================================================
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //Project   ====================================================================================
+    implementation(projects.core.common)
+    implementation(projects.core.domain)
 }

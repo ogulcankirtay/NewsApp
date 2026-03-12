@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.oglcnkrty.core.common"
+    namespace = "com.oglcnkrty.core.remote"
     compileSdk {
         version = release(36)
     }
@@ -13,12 +13,12 @@ android {
         minSdk = 24
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
-
         }
     }
     compileOptions {
